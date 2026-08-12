@@ -8,6 +8,10 @@
 import random # used to let the computer randomly choose Heads or Tails
 
 #----functions----
+def first_name():
+    pass
+
+
 def heads_tails(first_name):
      # initialise scores for both players
     user_score = 0
