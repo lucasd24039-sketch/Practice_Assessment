@@ -11,11 +11,11 @@ def force_name():
 # makes an infinite loop, ensuring name is between 2 and 12 letters
     while(True):
 # ensures users name is only letters
-        text = input("Please type name: ")
-        if len(text) >= 2 and len(text) <= 12 and text.isalpha():
-            print("Name accepted:", text)
+        name = input("Please type name: ")
+        if len(name) >= 2 and len(name) <= 12 and name.isalpha():
+            print("Name accepted:", name)
             # returns name back to variable that called the function
-            return text
+            return name
 # prints error if name contains numbers / special characters
         else:
             print("ERROR -- please enter valid name")
