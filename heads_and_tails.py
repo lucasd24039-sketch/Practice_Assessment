@@ -6,22 +6,19 @@
 '''
 #----libraries----
 import random # used to let the computer randomly choose Heads or Tails
-import string #
 #----functions----
 def force_name():
 # makes an infinite loop, ensuring name is between 2 and 12 letters
     while(True):
 # ensures users name is only letters
-        text=str(input("Please type name"))
-        if (len(text) >= 2 and len(text) <= 12 and text.isalpha()):
-            print(text)
-# breaks the code when statement is true
-            break
+        text = input("Please type name: ")
+        if len(text) >= 2 and len(text) <= 12 and text.isalpha():
+            print("Name accepted:", text)
+            # returns name back to variable that called the function
+            return text
 # prints error if name contains numbers / special characters
         else:
             print("ERROR -- please enter valid name")
-# returns name back to variable that called the function
-        return text
 
 def heads_tails(first_name):
      # initialise scores for both players
