@@ -10,7 +10,11 @@ import random # used to let the computer randomly choose Heads or Tails
 #----functions----
 def first_name():
     pass
-
+# makes an infinite loop, ensuring name is between 2 and 12 letters
+# ensures users name is only letters
+# breaks the code when statement is true
+# prints error if name contains numbers / special characters
+# returns name back to variable that called the function
 
 def heads_tails(first_name):
      # initialise scores for both players
