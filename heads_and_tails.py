@@ -25,7 +25,7 @@ def heads_tails(first_name):
     user_score = 0
     computer_score = 0
     # possible options for the game
-    options = ["Heads", "Tails", "heads", "tails"]
+    options = ["Heads", "Tails"]
 
     # loop continues until someone reaches 2 points (best of 3)
     while user_score != 2 and computer_score != 2:
@@ -49,5 +49,6 @@ def heads_tails(first_name):
 
 #----main program----
 print("Hi! Welcome to my Heads or Tails game.") # intro message
+print("Please ensure guesses start with a capital.")
 first_name=force_name()
 heads_tails(first_name) # start the game
