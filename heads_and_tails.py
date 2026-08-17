@@ -25,7 +25,7 @@ def heads_tails(first_name):
     user_score = 0
     computer_score = 0
     # possible options for the game
-    options = ["Heads", "Tails"]
+    options = ["Heads", "Tails", "heads", "tails"]
 
     # loop continues until someone reaches 2 points (best of 3)
     while user_score != 2 and computer_score != 2:
