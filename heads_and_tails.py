@@ -12,7 +12,7 @@ def force_name():
     while(True):
 # ensures users name is only letters
         name = input("Please type name: ")
-        if len(name) >= 2 and len(name) <= 12 and name.isalpha():
+        if(len(name) >= 2 and len(name) <= 12 and name.isalpha()):
             print("Name accepted:", name)
             # returns name back to variable that called the function
             return name
@@ -28,12 +28,12 @@ def heads_tails(first_name):
     options = ["Heads", "Tails"]
 
     # loop continues until someone reaches 2 points (best of 3)
-    while user_score != 2 and computer_score != 2:
+    while(user_score != 2 and computer_score != 2):
         computer_guess = random.choice(options) # computer randomly picks Heads/Tails
         user_guess = input("Heads or Tails: ") # user enters their guess
 
         # check if the user guessed correctly
-        if user_guess == computer_guess:
+        if(user_guess == computer_guess):
             print("It was {}, you guessed {}, you won that round".format(computer_guess, user_guess))
             user_score += 1
         else:
@@ -49,6 +49,6 @@ def heads_tails(first_name):
 
 #----main program----
 print("Hi! Welcome to my Heads or Tails game.") # intro message
-print("Please ensure guesses start with a capital.")
+print("Please ensure guesses start with a capital.") # tells the user to use capital letters in their guess
 first_name=force_name()
 heads_tails(first_name) # start the game
